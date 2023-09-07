@@ -1,0 +1,30 @@
+mousedown
+ mouse: triggers immediately when mouse is pressed
+ touch: does not trigger when pressed, triggers when released. will not trigger if pressed, dragged, and then moved.
+
+touchstart
+ mouse: NEVER TRIGGERS
+ touch: triggers immediately when touch is pressed
+  note: trigger preventDefault() to prevent the device's builtin zoom function
+
+
+
+mousemove
+ mouse: triggers every time the mouse moves
+ touch: does not trigger when pressed, triggers when released. will not trigger if pressed, dragged, and then moved.
+
+touchmove
+ mouse: NEVER TRIGGERS
+ touch: triggers every time the mouse moves _while pressed_, regardless of touch count or gestures
+
+
+
+mouseup
+ mouse: triggers immediately when mouse is released
+ touch: does not trigger when pressed, triggers when released. will not trigger if pressed, dragged, and then moved.
+
+touchend
+ mouse: NEVER TRIGGERS
+ touch: triggers immediately when touch is released. triggers for every touch, regardless of touch count or gestures
+
+

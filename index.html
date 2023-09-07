@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="data.js"></script>
+</head>
+<body>
+    <div style="padding: 8px; height: calc(100% - 16px);">
+        <div style="border: 1px solid green; height: 100%;">
+
+
+
+            <div id="map_pane" class="no_overflow unselectable" oncontextmenu="return false;">
+                <div id="map_container" style="left: 0px; top: 0px;">
+                    <div id="">
+                        <canvas id="map_canvas" width="896" height="896"></canvas>
+                        <img id="map_image" src="./map.png"/>
+                    </div>
+                    <div id="map_points">
+                        <img class="image_label poitioned_on_top" data-pointindex="23" src="./y.png" style="left: 147.329px; top: 448px;">
+                    </div>
+                    <!-- <div id="map_dialog" style="width: 20px; height: 20px; left: 700px; top: 300px; position: absolute; background-color: white;"></div> -->
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
